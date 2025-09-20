@@ -1,0 +1,136 @@
+{
+  "brands": [
+    {
+      "id": "furniturehub12",
+      "name": "Furniture Hub 12",
+      "description": "Modern, industrial furniture for cafes and offices",
+      "industry": "Modern Furniture (India)",
+      "tone": "Professional, Industrial, Modern",
+      "target": "Cafes, Offices, Restaurants",
+      "keywords": ["Quality", "Stylish", "Industrial", "Modern furniture", "Workspace", "Office design"],
+      "website": "www.Exportofindia.com",
+      "hashtags": ["#ModernFurniture", "#IndustrialStyle", "#OfficeDesign", "#WorkspaceGoals", "#FurnitureDesign", "#InteriorDesign"],
+      "sampleCaptions": [
+        "Transform your workspace with industrial elegance ⚡",
+        "Where modern meets functional - office furniture redefined 🏢",
+        "Elevate your cafe's ambiance with our signature pieces ☕"
+      ]
+    },
+    {
+      "id": "asian_bazaar",
+      "name": "Asian Bazaar",
+      "description": "Vintage and historical aesthetic modern furniture",
+      "industry": "Vintage Decor & Modern Furniture",
+      "tone": "Aesthetic, Historical, Trendy",
+      "target": "Home decorators, Vintage enthusiasts",
+      "keywords": ["Vintage", "Modern", "Historical aesthetics", "Sydney warehouse", "Decor"],
+      "website": "https://asian-bazaar.com.au/",
+      "hashtags": ["#VintageFurniture", "#HistoricalDesign", "#ModernVintage", "#HomeDecor", "#AntiqueStyle", "#VintageDecor"],
+      "sampleCaptions": [
+        "Where history meets contemporary living ✨",
+        "Vintage soul, modern heart - furniture with stories to tell 📚",
+        "Transform your space with timeless elegance 🏛️"
+      ]
+    },
+    {
+      "id": "exportofindia",
+      "name": "Export of India",
+      "description": "Premium, durable, customizable furniture",
+      "industry": "Premium Furniture",
+      "tone": "Premium, Trustworthy, Quality-focused",
+      "target": "Quality-conscious buyers",
+      "keywords": ["Premium", "Durable", "Stylish", "Customizable", "Quality"],
+      "website": "www.Exportofindia.com",
+      "hashtags": ["#PremiumFurniture", "#QualityCraftsmanship", "#CustomFurniture", "#DurableDesign", "#LuxuryLiving", "#IndianCraftsmanship"],
+      "sampleCaptions": [
+        "Premium quality that stands the test of time 💎",
+        "Crafted with precision, designed for elegance 🎯",
+        "Your vision, our craftsmanship - furniture that speaks quality ⭐"
+      ]
+    },
+    {
+      "id": "blissofwellness",
+      "name": "Bliss of Wellness",
+      "description": "Air fresheners for cars, promoting wellness",
+      "industry": "Wellness & Air Fresheners",
+      "tone": "Natural, Calming, Health-focused",
+      "target": "Car owners, Wellness enthusiasts",
+      "keywords": ["Nature", "Comfort", "Air fresheners", "Wellness", "Cars", "Freshness"],
+      "website": "Blissofwellness.com",
+      "hashtags": ["#CarWellness", "#NaturalFreshness", "#AirFreshener", "#WellnessJourney", "#HealthyLiving", "#CarEssentials"],
+      "sampleCaptions": [
+        "Breathe better, drive happier 🌿",
+        "Transform your daily commute into a wellness journey 🚗💚",
+        "Natural freshness that travels with you ✨"
+      ]
+    },
+    {
+      "id": "hotel_kspalace",
+      "name": "Hotel KS Palace",
+      "description": "Luxury boutique hotel in Srinagar",
+      "industry": "Luxury Boutique Hotel (Srinagar)",
+      "tone": "Luxury, Relaxing, Hospitality-focused",
+      "target": "Solo, couple, family travelers",
+      "keywords": ["Luxury", "Srinagar", "Boutique hotel", "Kashmir", "Hospitality"],
+      "website": "",
+      "hashtags": ["#LuxuryHotel", "#SrinagarStay", "#KashmirHospitality", "#BoutiqueHotel", "#LuxuryTravel", "#KashmirTourism"],
+      "sampleCaptions": [
+        "Where even the Wi-Fi signals relax 📶✨",
+        "Luxury redefined in the heart of Srinagar 🏔️",
+        "Your sanctuary in paradise awaits 🌸"
+      ]
+    },
+    {
+      "id": "houseboat_holidays_kashmir",
+      "name": "Houseboat Holidays Kashmir",
+      "description": "Deluxe houseboats in Srinagar",
+      "industry": "Deluxe Houseboat Tourism",
+      "tone": "Hospitality, Scenic, Cultural",
+      "target": "Tourists, Experience seekers",
+      "keywords": ["Deluxe", "Nigeen lake", "Kashmiri hospitality", "Floating paradise", "Houseboat"],
+      "website": "",
+      "hashtags": ["#HouseboatStay", "#KashmirTourism", "#NigeenLake", "#FloatingParadise", "#KashmirHospitality", "#UniqueStay"],
+      "sampleCaptions": [
+        "Float into serenity on Nigeen Lake 🚤",
+        "Where water meets wanderlust - your floating paradise awaits 🌊",
+        "Experience Kashmir like never before ⛵"
+      ]
+    },
+    {
+      "id": "valleyweddingcars",
+      "name": "Valley Wedding Cars",
+      "description": "Luxury car rentals for weddings and events",
+      "industry": "Luxury Car Rentals",
+      "tone": "Luxury, Celebratory, Premium service",
+      "target": "Wedding couples, Event organizers",
+      "keywords": ["Luxury cars", "Wedding", "Engagement", "Sightseeing", "Proposal", "Kashmir"],
+      "website": "",
+      "hashtags": ["#LuxuryCars", "#KashmirWeddings", "#WeddingCars", "#LuxuryRentals", "#DreamWedding", "#ValleyWeddings"],
+      "sampleCaptions": [
+        "Arrive in style on your special day 💍🚗",
+        "Every love story deserves a luxury entrance ✨",
+        "Making your dream wedding a reality, one ride at a time 👰🤵"
+      ]
+    }
+  ],
+  "trendingHashtags2025": [
+    "#trending", "#viral", "#instagram", "#instagood", "#explore", "#reels",
+    "#september2025", "#autumn", "#fall", "#photography", "#photooftheday",
+    "#love", "#nature", "#travel", "#lifestyle", "#business", "#fashion",
+    "#beauty", "#fitness", "#food", "#art", "#design", "#inspiration",
+    "#motivation", "#success", "#entrepreneur", "#smallbusiness", "#local",
+    "#handmade", "#quality", "#luxury", "#premium", "#style", "#modern",
+    "#vintage", "#classic", "#unique", "#special", "#amazing", "#beautiful"
+  ],
+  "industryHashtags": {
+    "furniture": ["#furniture", "#homedecor", "#interiordesign", "#homedesign", "#decor", "#home", "#design", "#interior", "#decoration", "#living", "#bedroom", "#kitchen", "#office", "#workspace"],
+    "wellness": ["#wellness", "#health", "#natural", "#organic", "#fresh", "#clean", "#comfort", "#relax", "#breathe", "#mindfulness", "#selfcare", "#healthy"],
+    "tourism": ["#travel", "#tourism", "#vacation", "#holiday", "#destination", "#explore", "#adventure", "#experience", "#journey", "#wanderlust", "#getaway", "#staycation"],
+    "automotive": ["#cars", "#luxury", "#rental", "#wedding", "#event", "#celebration", "#special", "#premium", "#service", "#transportation", "#ride", "#style"]
+  },
+  "locationHashtags": {
+    "kashmir": ["#kashmir", "#srinagar", "#kashmirtourism", "#kashmirvalley", "#paradiseonearth", "#kashmirbeuty", "#incredibleindia"],
+    "india": ["#india", "#incredibleindia", "#madeinindia", "#indian", "#desi", "#bharath", "#hindustan"],
+    "sydney": ["#sydney", "#australia", "#sydneyaustralia", "#sydneyharbour", "#aussie", "#downunder"]
+  }
+}
