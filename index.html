@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caption & Hashtag Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Section -->
+        <header class="app-header">
+            <div class="container">
+                <h1 class="app-title">Caption & Hashtag Generator</h1>
+                <p class="app-subtitle">AI-powered content generation for your Instagram marketing</p>
+            </div>
+        </header>
+
+        <!-- Brand Selector -->
+        <section class="brand-selector-section">
+            <div class="container">
+                <div class="brand-selector-wrapper">
+                    <label for="brandSelect" class="form-label">Select Your Brand</label>
+                    <select id="brandSelect" class="form-control brand-select">
+                        <option value="">Choose a brand...</option>
+                    </select>
+                    <div id="brandDescription" class="brand-description hidden"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <div class="content-grid">
+                    <!-- Input Panel -->
+                    <div class="input-panel">
+                        <!-- Image Upload Section -->
+                        <div class="card upload-section">
+                            <div class="card__body">
+                                <h3>Upload Image</h3>
+                                <div class="upload-zone" id="uploadZone">
+                                    <div class="upload-content">
+                                        <svg class="upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                            <polyline points="17,8 12,3 7,8"></polyline>
+                                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                                        </svg>
+                                        <p class="upload-text">
+                                            <span class="upload-primary">Click to upload</span> or drag and drop
+                                        </p>
+                                        <p class="upload-formats">PNG, JPG, WEBP up to 10MB</p>
+                                    </div>
+                                    <input type="file" id="imageInput" class="hidden" accept="image/*">
+                                </div>
+                                <div id="imagePreview" class="image-preview hidden">
+                                    <img id="previewImg" src="" alt="Preview">
+                                    <button id="removeImage" class="btn-remove">×</button>
+                                </div>
+                                <div id="uploadError" class="error-message hidden"></div>
+                            </div>
+                        </div>
+
+                        <!-- Text Input Section -->
+                        <div class="card text-input-section">
+                            <div class="card__body">
+                                <label for="contextInput" class="form-label">Describe Your Content</label>
+                                <textarea 
+                                    id="contextInput" 
+                                    class="form-control context-textarea"
+                                    placeholder="Describe what you want to post about..."
+                                    rows="4"
+                                    maxlength="500"
+                                ></textarea>
+                                <div class="input-footer">
+                                    <span id="charCount" class="char-count">0/500</span>
+                                </div>
+                                <div id="textError" class="error-message hidden"></div>
+                            </div>
+                        </div>
+
+                        <!-- Generate Button -->
+                        <div class="generate-section">
+                            <button id="generateBtn" class="btn btn--primary btn--lg btn--full-width" disabled>
+                                <span class="btn-text">Generate Content</span>
+                                <span class="btn-spinner hidden">
+                                    <svg class="spinner" width="16" height="16" viewBox="0 0 24 24">
+                                        <path d="M12,1A11,11,0,1,0,23,12,11,11,0,0,0,12,1Zm0,19a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" opacity="0.25"></path>
+                                        <path d="M12,4a8,8,0,0,1,7.89,6.7A1.53,1.53,0,0,0,21.38,12h0a1.5,1.5,0,0,0,1.48-1.75,11,11,0,0,0-21.72,0A1.5,1.5,0,0,0,2.62,12h0a1.53,1.53,0,0,0,1.49-1.3A8,8,0,0,1,12,4Z"></path>
+                                    </svg>
+                                    Generating...
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Results Panel -->
+                    <div class="results-panel">
+                        <div id="resultsContainer" class="results-container hidden">
+                            <!-- Caption Results -->
+                            <div class="card results-section">
+                                <div class="card__body">
+                                    <h3 class="results-title">Generated Captions</h3>
+                                    <div id="captionResults" class="caption-results">
+                                        <!-- Caption cards will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hashtag Results -->
+                            <div class="card results-section">
+                                <div class="card__body">
+                                    <h3 class="results-title">Hashtag Sets</h3>
+                                    <div id="hashtagResults" class="hashtag-results">
+                                        <!-- Hashtag sets will be inserted here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Empty State -->
+                        <div id="emptyState" class="empty-state">
+                            <div class="empty-content">
+                                <svg class="empty-icon" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                                    <path d="M14.828 14.828a4 4 0 0 1-5.656 0"></path>
+                                    <path d="M9 9a4 4 0 0 1 6 0"></path>
+                                    <circle cx="12" cy="12" r="9"></circle>
+                                </svg>
+                                <h3>Ready to Generate Content</h3>
+                                <p>Select a brand and upload an image or add text to get started</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Toast Notification -->
+        <div id="toast" class="toast hidden">
+            <span id="toastMessage"></span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
