@@ -1,152 +1,35 @@
-// Brand data and configuration
-const brandData = {
-  "brands": [
-    {
-      "id": "furniturehub12",
-      "name": "Furniture Hub 12",
-      "description": "Modern, industrial furniture for cafes and offices",
-      "industry": "Modern Furniture (India)",
-      "tone": "Professional, Industrial, Modern",
-      "target": "Cafes, Offices, Restaurants",
-      "keywords": ["Quality", "Stylish", "Industrial", "Modern furniture", "Workspace", "Office design"],
-      "website": "www.Exportofindia.com",
-      "hashtags": ["#ModernFurniture", "#IndustrialStyle", "#OfficeDesign", "#WorkspaceGoals", "#FurnitureDesign", "#InteriorDesign"],
-      "sampleCaptions": [
-        "Transform your workspace with industrial elegance ⚡",
-        "Where modern meets functional - office furniture redefined 🏢",
-        "Elevate your cafe's ambiance with our signature pieces ☕"
-      ]
-    },
-    {
-      "id": "asian_bazaar",
-      "name": "Asian Bazaar",
-      "description": "Vintage and historical aesthetic modern furniture",
-      "industry": "Vintage Decor & Modern Furniture",
-      "tone": "Aesthetic, Historical, Trendy",
-      "target": "Home decorators, Vintage enthusiasts",
-      "keywords": ["Vintage", "Modern", "Historical aesthetics", "Sydney warehouse", "Decor"],
-      "website": "https://asian-bazaar.com.au/",
-      "hashtags": ["#VintageFurniture", "#HistoricalDesign", "#ModernVintage", "#HomeDecor", "#AntiqueStyle", "#VintageDecor"],
-      "sampleCaptions": [
-        "Where history meets contemporary living ✨",
-        "Vintage soul, modern heart - furniture with stories to tell 📚",
-        "Transform your space with timeless elegance 🏛️"
-      ]
-    },
-    {
-      "id": "exportofindia",
-      "name": "Export of India",
-      "description": "Premium, durable, customizable furniture",
-      "industry": "Premium Furniture",
-      "tone": "Premium, Trustworthy, Quality-focused",
-      "target": "Quality-conscious buyers",
-      "keywords": ["Premium", "Durable", "Stylish", "Customizable", "Quality"],
-      "website": "www.Exportofindia.com",
-      "hashtags": ["#PremiumFurniture", "#QualityCraftsmanship", "#CustomFurniture", "#DurableDesign", "#LuxuryLiving", "#IndianCraftsmanship"],
-      "sampleCaptions": [
-        "Premium quality that stands the test of time 💎",
-        "Crafted with precision, designed for elegance 🎯",
-        "Your vision, our craftsmanship - furniture that speaks quality ⭐"
-      ]
-    },
-    {
-      "id": "blissofwellness",
-      "name": "Bliss of Wellness",
-      "description": "Air fresheners for cars, promoting wellness",
-      "industry": "Wellness & Air Fresheners",
-      "tone": "Natural, Calming, Health-focused",
-      "target": "Car owners, Wellness enthusiasts",
-      "keywords": ["Nature", "Comfort", "Air fresheners", "Wellness", "Cars", "Freshness"],
-      "website": "Blissofwellness.com",
-      "hashtags": ["#CarWellness", "#NaturalFreshness", "#AirFreshener", "#WellnessJourney", "#HealthyLiving", "#CarEssentials"],
-      "sampleCaptions": [
-        "Breathe better, drive happier 🌿",
-        "Transform your daily commute into a wellness journey 🚗💚",
-        "Natural freshness that travels with you ✨"
-      ]
-    },
-    {
-      "id": "hotel_kspalace",
-      "name": "Hotel KS Palace",
-      "description": "Luxury boutique hotel in Srinagar",
-      "industry": "Luxury Boutique Hotel (Srinagar)",
-      "tone": "Luxury, Relaxing, Hospitality-focused",
-      "target": "Solo, couple, family travelers",
-      "keywords": ["Luxury", "Srinagar", "Boutique hotel", "Kashmir", "Hospitality"],
-      "website": "",
-      "hashtags": ["#LuxuryHotel", "#SrinagarStay", "#KashmirHospitality", "#BoutiqueHotel", "#LuxuryTravel", "#KashmirTourism"],
-      "sampleCaptions": [
-        "Where even the Wi-Fi signals relax 📶✨",
-        "Luxury redefined in the heart of Srinagar 🏔️",
-        "Your sanctuary in paradise awaits 🌸"
-      ]
-    },
-    {
-      "id": "houseboat_holidays_kashmir",
-      "name": "Houseboat Holidays Kashmir",
-      "description": "Deluxe houseboats in Srinagar",
-      "industry": "Deluxe Houseboat Tourism",
-      "tone": "Hospitality, Scenic, Cultural",
-      "target": "Tourists, Experience seekers",
-      "keywords": ["Deluxe", "Nigeen lake", "Kashmiri hospitality", "Floating paradise", "Houseboat"],
-      "website": "",
-      "hashtags": ["#HouseboatStay", "#KashmirTourism", "#NigeenLake", "#FloatingParadise", "#KashmirHospitality", "#UniqueStay"],
-      "sampleCaptions": [
-        "Float into serenity on Nigeen Lake 🚤",
-        "Where water meets wanderlust - your floating paradise awaits 🌊",
-        "Experience Kashmir like never before ⛵"
-      ]
-    },
-    {
-      "id": "valleyweddingcars",
-      "name": "Valley Wedding Cars",
-      "description": "Luxury car rentals for weddings and events",
-      "industry": "Luxury Car Rentals",
-      "tone": "Luxury, Celebratory, Premium service",
-      "target": "Wedding couples, Event organizers",
-      "keywords": ["Luxury cars", "Wedding", "Engagement", "Sightseeing", "Proposal", "Kashmir"],
-      "website": "",
-      "hashtags": ["#LuxuryCars", "#KashmirWeddings", "#WeddingCars", "#LuxuryRentals", "#DreamWedding", "#ValleyWeddings"],
-      "sampleCaptions": [
-        "Arrive in style on your special day 💍🚗",
-        "Every love story deserves a luxury entrance ✨",
-        "Making your dream wedding a reality, one ride at a time 👰🤵"
-      ]
-    }
-  ],
-  "trendingHashtags2025": [
-    "#trending", "#viral", "#instagram", "#instagood", "#explore", "#reels", 
-    "#september2025", "#autumn", "#fall", "#photography", "#photooftheday", 
-    "#love", "#nature", "#travel", "#lifestyle", "#business", "#fashion", 
-    "#beauty", "#fitness", "#food", "#art", "#design", "#inspiration", 
-    "#motivation", "#success", "#entrepreneur", "#smallbusiness", "#local", 
-    "#handmade", "#quality", "#luxury", "#premium", "#style", "#modern", 
-    "#vintage", "#classic", "#unique", "#special", "#amazing", "#beautiful"
-  ],
-  "industryHashtags": {
-    "furniture": ["#furniture", "#homedecor", "#interiordesign", "#homedesign", "#decor", "#home", "#design", "#interior", "#decoration", "#living", "#bedroom", "#kitchen", "#office", "#workspace"],
-    "wellness": ["#wellness", "#health", "#natural", "#organic", "#fresh", "#clean", "#comfort", "#relax", "#breathe", "#mindfulness", "#selfcare", "#healthy"],
-    "tourism": ["#travel", "#tourism", "#vacation", "#holiday", "#destination", "#explore", "#adventure", "#experience", "#journey", "#wanderlust", "#getaway", "#staycation"],
-    "automotive": ["#cars", "#luxury", "#rental", "#wedding", "#event", "#celebration", "#special", "#premium", "#service", "#transportation", "#ride", "#style"]
-  },
-  "locationHashtags": {
-    "kashmir": ["#kashmir", "#srinagar", "#kashmirtourism", "#kashmirvalley", "#paradiseonearth", "#kashmirbeuty", "#incredibleindia"],
-    "india": ["#india", "#incredibleindia", "#madeinindia", "#indian", "#desi", "#bharath", "#hindustan"],
-    "sydney": ["#sydney", "#australia", "#sydneyaustralia", "#sydneyharbour", "#aussie", "#downunder"]
-  }
-};
+// Brand data and configuration (loaded from external JSON file)
+let brandData = null;
 
 // Application State
 let currentBrand = null;
 let uploadedImage = null;
+let uploadedImageDataUrl = null;
 
 // Initialize the application
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
     console.log('Initializing Caption and Hashtag Generator...');
-    initializeBrandSelector();
+    await loadBrandData();
     initializeEventListeners();
     updateGenerateButton();
 });
+
+// Fetch brand data from the backend
+async function loadBrandData() {
+    try {
+        const response = await fetch('brandData.json', { cache: 'no-cache' });
+        if (!response.ok) {
+            throw new Error(`Failed to load brand data: ${response.status}`);
+        }
+
+        brandData = await response.json();
+        console.log('Brand data loaded with', brandData.brands?.length || 0, 'entries');
+        initializeBrandSelector();
+    } catch (error) {
+        console.error('Error loading brand data:', error);
+        showToast('Unable to load brand information. Please refresh the page.', 'error');
+    }
+}
 
 // Initialize brand selector dropdown
 function initializeBrandSelector() {
@@ -155,7 +38,12 @@ function initializeBrandSelector() {
         console.error('Brand select element not found');
         return;
     }
-    
+
+    if (!brandData || !Array.isArray(brandData.brands)) {
+        console.warn('Brand data not available yet');
+        return;
+    }
+
     // Clear existing options except the first one
     while (brandSelect.children.length > 1) {
         brandSelect.removeChild(brandSelect.lastChild);
@@ -219,12 +107,17 @@ function initializeEventListeners() {
 function handleBrandChange() {
     const brandSelect = document.getElementById('brandSelect');
     const brandDescription = document.getElementById('brandDescription');
-    
+
     if (!brandSelect || !brandDescription) {
         console.error('Brand selection elements not found');
         return;
     }
-    
+
+    if (!brandData || !Array.isArray(brandData.brands)) {
+        console.warn('Brand data not ready when handling selection');
+        return;
+    }
+
     const brandId = brandSelect.value;
     currentBrand = brandData.brands.find(brand => brand.id === brandId);
     
@@ -329,6 +222,7 @@ function handleImageFile(file) {
             uploadZone.classList.add('hidden');
             imagePreview.classList.remove('hidden');
             uploadedImage = file;
+            uploadedImageDataUrl = e.target.result;
             updateGenerateButton();
             console.log('Image uploaded successfully');
         }
@@ -347,8 +241,9 @@ function removeImage() {
     if (imagePreview) imagePreview.classList.add('hidden');
     if (previewImg) previewImg.src = '';
     if (imageInput) imageInput.value = '';
-    
+
     uploadedImage = null;
+    uploadedImageDataUrl = null;
     updateGenerateButton();
     console.log('Image removed');
 }
@@ -426,38 +321,56 @@ async function generateContent() {
         console.error('No brand selected');
         return;
     }
-    
+
     console.log('Starting content generation...');
-    
+
     // Show loading state
     const generateBtn = document.getElementById('generateBtn');
     const btnText = generateBtn?.querySelector('.btn-text');
     const btnSpinner = generateBtn?.querySelector('.btn-spinner');
-    
+
     if (btnText) btnText.classList.add('hidden');
     if (btnSpinner) btnSpinner.classList.remove('hidden');
     if (generateBtn) generateBtn.disabled = true;
-    
+
     try {
-        // Simulate API delay
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        
-        // Generate captions and hashtags
-        const captions = generateCaptions();
-        const hashtags = generateHashtags();
-        
-        console.log('Generated captions:', captions.length);
-        console.log('Generated hashtag sets:', hashtags.length);
-        
-        // Display results
-        displayResults(captions, hashtags);
-        
-        // Show success message
+        const contextInput = document.getElementById('contextInput');
+        const contextText = contextInput ? contextInput.value.trim() : '';
+
+        const response = await fetch('/api/generate', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                brandId: currentBrand.id,
+                context: contextText,
+                imageDataUrl: uploadedImageDataUrl
+            })
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json().catch(() => ({}));
+            const message = errorData.error || `Generation failed with status ${response.status}`;
+            throw new Error(message);
+        }
+
+        const result = await response.json();
+        const captions = (result.captions || []).map(caption => ({
+            ...caption,
+            length: caption.text ? caption.text.length : 0
+        }));
+        const hashtags = Array.isArray(result.hashtags) ? result.hashtags : [];
+
+        console.log('Generated captions via AI:', captions.length);
+        console.log('Generated hashtag sets via AI:', hashtags.length);
+
+        displayResults(captions, hashtags, result.metadata || null);
         showToast('Content generated successfully!', 'success');
-        
+
     } catch (error) {
         console.error('Generation error:', error);
-        showToast('Failed to generate content. Please try again.', 'error');
+        showToast(error.message || 'Failed to generate content. Please try again.', 'error');
     } finally {
         // Reset button state
         if (btnText) btnText.classList.remove('hidden');
@@ -620,8 +533,12 @@ function getCallToAction() {
 
 // Generate hashtag sets
 function generateHashtags() {
+    if (!brandData) {
+        return [];
+    }
+
     const hashtagSets = [];
-    
+
     // Brand-specific hashtags
     const brandHashtags = [...currentBrand.hashtags];
     hashtagSets.push({
@@ -686,18 +603,25 @@ function getLocationKey() {
 
 // Get random trending hashtags
 function getRandomTrendingHashtags() {
+    if (!brandData || !Array.isArray(brandData.trendingHashtags2025)) {
+        return [];
+    }
+
     const trending = [...brandData.trendingHashtags2025];
     const shuffled = trending.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 10);
 }
 
 // Display generated results
-function displayResults(captions, hashtags) {
+function displayResults(captions, hashtags, metadata = null) {
     const captionResults = document.getElementById('captionResults');
     const hashtagResults = document.getElementById('hashtagResults');
     const resultsContainer = document.getElementById('resultsContainer');
     const emptyState = document.getElementById('emptyState');
-    
+    const aiInsightsCard = document.getElementById('aiInsightsCard');
+    const aiNotes = document.getElementById('aiNotes');
+    const aiUsage = document.getElementById('aiUsage');
+
     if (!captionResults || !hashtagResults) {
         console.error('Results containers not found');
         return;
@@ -718,14 +642,48 @@ function displayResults(captions, hashtags) {
         const hashtagCard = createHashtagCard(hashtagSet, index);
         hashtagResults.appendChild(hashtagCard);
     });
-    
+
     // Show results, hide empty state
     if (emptyState) emptyState.classList.add('hidden');
     if (resultsContainer) {
         resultsContainer.classList.remove('hidden');
         resultsContainer.classList.add('fade-in');
     }
-    
+
+    if (aiInsightsCard && aiNotes && aiUsage) {
+        if (metadata && (metadata.notes || metadata.usage)) {
+            aiInsightsCard.classList.remove('hidden');
+
+            if (metadata.notes) {
+                aiNotes.textContent = metadata.notes;
+                aiNotes.classList.remove('hidden');
+            } else {
+                aiNotes.textContent = '';
+                aiNotes.classList.add('hidden');
+            }
+
+            const usage = metadata.usage;
+            if (usage && (usage.promptTokenCount !== undefined || usage.candidatesTokenCount !== undefined || usage.totalTokenCount !== undefined)) {
+                const usageParts = [];
+                if (usage.promptTokenCount !== undefined) usageParts.push(`Prompt tokens: ${usage.promptTokenCount}`);
+                if (usage.candidatesTokenCount !== undefined) usageParts.push(`Response tokens: ${usage.candidatesTokenCount}`);
+                if (usage.totalTokenCount !== undefined) usageParts.push(`Total tokens: ${usage.totalTokenCount}`);
+
+                aiUsage.textContent = usageParts.join(' • ');
+                aiUsage.classList.remove('hidden');
+            } else {
+                aiUsage.textContent = '';
+                aiUsage.classList.add('hidden');
+            }
+        } else {
+            aiInsightsCard.classList.add('hidden');
+            aiNotes.textContent = '';
+            aiNotes.classList.add('hidden');
+            aiUsage.textContent = '';
+            aiUsage.classList.add('hidden');
+        }
+    }
+
     console.log('Results displayed successfully');
 }
 
