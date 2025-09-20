@@ -8,6 +8,8 @@ const fetch = global.fetch || ((...args) => import('node-fetch').then(({ default
 const app = express();
 const PORT = process.env.PORT || 3000;
 const GOOGLE_API_KEY = process.env.GOOGLE_AI_STUDIO_API_KEY || process.env.GOOGLE_API_KEY || process.env.GOOGLE_STUDIO_API_KEY;
+const GOOGLE_MODEL = process.env.GOOGLE_AI_MODEL || process.env.GOOGLE_MODEL || 'gemini-1.5-flash-latest';
+const GOOGLE_API_BASE_URL = process.env.GOOGLE_API_BASE_URL || 'https://generativelanguage.googleapis.com';
 
 const brandData = require('./brandData.json');
 
@@ -44,7 +46,7 @@ app.post('/api/generate', async (req, res) => {
       hasImage: Boolean(imageDataUrl)
     });
 
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GOOGLE_API_KEY}`;
+    const url = `${GOOGLE_API_BASE_URL.replace(/\/$/, '')}/v1beta/models/${GOOGLE_MODEL}:generateContent?key=${GOOGLE_API_KEY}`;
 
     const parts = [{ text: prompt }];
     if (imageDataUrl) {
@@ -79,7 +81,21 @@ app.post('/api/generate', async (req, res) => {
     if (!aiResponse.ok) {
       const errorText = await aiResponse.text();
       console.error('AI request failed', aiResponse.status, errorText);
-      return res.status(502).json({ error: 'AI service failed to generate content' });
+
+      let upstreamMessage = 'AI service failed to generate content';
+      try {
+        const parsedError = JSON.parse(errorText);
+        upstreamMessage = parsedError?.error?.message || parsedError?.message || upstreamMessage;
+      } catch (parseError) {
+        if (errorText && errorText.trim().length > 0) {
+          upstreamMessage = errorText.trim();
+        }
+      }
+
+      return res.status(502).json({
+        error: `Gemini API ${aiResponse.status}: ${upstreamMessage}`,
+        upstreamStatus: aiResponse.status
+      });
     }
 
     const responseBody = await aiResponse.json();

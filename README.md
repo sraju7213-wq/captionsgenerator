@@ -35,14 +35,19 @@ This project is a multi-brand Instagram caption and hashtag generator with an AI
 
 ## API Notes
 
-- The backend calls the `gemini-1.5-flash` model via Google AI Studio.
+- The backend calls the `gemini-1.5-flash-latest` model via Google AI Studio by default. You can override the model with the `GOOGLE_AI_MODEL` environment variable if your project has access to a different release channel.
 - Requests include optional inline image data when an image is uploaded.
 - Responses are normalized to ensure the frontend always receives caption and hashtag arrays.
 
 ## Environment Variables
 
 - `GOOGLE_AI_STUDIO_API_KEY`: (Required) Your Google AI Studio API key. Alternately you can use `GOOGLE_API_KEY` or `GOOGLE_STUDIO_API_KEY` for compatibility.
+- `GOOGLE_AI_MODEL`: (Optional) Set a specific Gemini model to call (defaults to `gemini-1.5-flash-latest`).
 - `PORT`: (Optional) Override the default Express port (3000).
+
+## Troubleshooting
+
+- **`Gemini API 404: Method not found`** – Ensure the `GOOGLE_AI_MODEL` value matches a model that is available to your API key. The default of `gemini-1.5-flash-latest` works for the Google AI Studio free tier. If you previously set a different model, update or remove the override and restart the server.
 
 ## Development Tips
 
